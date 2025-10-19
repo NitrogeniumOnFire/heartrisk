@@ -1,0 +1,27 @@
+
+:root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--accent2:#ef4444;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; background:linear-gradient(180deg,#071029, #01121a); color:#e6eef6}
+.card{width:min(920px,96vw); padding:28px; border-radius:16px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); box-shadow: 0 6px 30px rgba(2,6,23,0.7);}
+h1{margin:0 0 6px; font-size:22px}
+.lead{color:var(--muted); margin:0 0 18px}
+#inputs-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin-bottom:14px}
+.input{background:var(--glass); padding:12px; border-radius:10px}
+.input label{display:flex; justify-content:space-between; font-size:13px; color:var(--muted); margin-bottom:8px}
+.input .desc{display:block; color:var(--muted); font-size:12px; margin-top:6px}
+.input input[type="range"]{width:100%}
+.input .val{font-weight:700}
+.row{display:flex; gap:10px; margin-top:6px}
+button{background:linear-gradient(90deg,var(--accent), #60a5fa); border:none; padding:10px 14px; border-radius:10px; color:#022; font-weight:600; cursor:pointer}
+.result{margin-top:14px; padding:12px; border-radius:10px; background:rgba(8,12,20,0.6);}
+.result.hidden{display:none}
+.explain{margin-top:14px; padding:12px; border-radius:10px; background:rgba(8,12,20,0.6);}
+.explain.hidden{display:none}
+.explain-item{display:flex; align-items:center; gap:10px; margin:8px 0}
+.bar{height:12px; border-radius:8px; flex:1; background:rgba(255,255,255,0.06); position:relative; overflow:hidden}
+.bar > span{position:absolute; left:0; top:0; bottom:0}
+.effect-pos{background:var(--accent2)} /* increases risk */
+.effect-neg{background:#3b82f6} /* decreases risk */
+.feature-name{width:140px; font-size:13px; color:var(--muted)}
+footer{margin-top:16px; color:var(--muted); font-size:13px}
+small{color:var(--muted)}
